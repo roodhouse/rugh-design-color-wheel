@@ -10,9 +10,9 @@ function Home() {
     <div>
         <h1>Colors</h1>
         <ul>
-            {colors.map(({id, name, family}) => (
+            {colors.map(({id, name, family, number}) => (
                 <li key={id}>
-                    <Link to={`color/${id}`}>{name} is in the {family} family</Link>
+                    <Link to={`color/${id}`}>{name} is in the {family} family {number}</Link>
                 </li>
             ))}
         </ul>
