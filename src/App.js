@@ -1,10 +1,16 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Color from './components/Color';
 
 function App() {
   return (
-    <div>
-      <h1>Hi</h1>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='color/:id' element={<Color />} />
+
+      
+    </Routes>
   );
 }
 
