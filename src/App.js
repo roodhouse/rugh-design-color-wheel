@@ -2,15 +2,20 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Color from './components/Color';
+import Wheel from './components/Wheel';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='color/:id' element={<Color />} />
-
-      
-    </Routes>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={[<Home />, <Wheel />]} />
+        <Route path='color/:id' element={<Color />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
