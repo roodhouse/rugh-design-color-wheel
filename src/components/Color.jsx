@@ -13,6 +13,9 @@ function Color() {
   return (
     <div style={{backgroundColor: color.hex}}>
         <h1>{color.name}</h1>
+        <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
         <p>{color.family}</p>
         <p>{color.comp.colorOne.name}</p>
 
