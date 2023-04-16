@@ -10,38 +10,35 @@ function MonoColor() {
 
   return (
     <>
-    <div>
-            <h3>Mono Colors</h3>
-          </div>
-          {/* mono color container */}
-          <div className="flex flex-row">
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.mono.colorOne.hex }}
-            >
-              {color.mono.colorOne.name}
-            </div>
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.mono.colorTwo.hex }}
-            >
-              {color.mono.colorTwo.name}
-            </div>
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.mono.colorThree.hex }}
-            >
-              {color.mono.colorThree.name}
-            </div>
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.mono.colorThree.hex }}
-            >
-              {color.mono.colorFour.name}
-            </div>
-          </div>
+      {/* mono color container */}
+      <div className="flex flex-row justify-evenly">
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.mono.colorOne.hex }}
+        >
+          <span className='text-center'>{color.mono.colorOne.name}</span>
+        </div>
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.mono.colorTwo.hex }}
+        >
+          <span className='text-center'>{color.mono.colorTwo.name}</span>
+        </div>
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.mono.colorThree.hex }}
+        >
+          <span className='text-center'>{color.mono.colorThree.name}</span>
+        </div>
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.mono.colorThree.hex }}
+        >
+          <span className='text-center'>{color.mono.colorFour.name}</span>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default MonoColor

@@ -10,39 +10,35 @@ function TriadColor() {
 
   return (
     <>
-    <div>
-            <h3>Triad Colors</h3>
-          </div>
-          {/* triad color container */}
-          <div className="flex flex-row">
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.triad.colorOne.hex }}
-            >
-              {color.triad.colorOne.name}
-            </div>
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.triad.colorTwo.hex }}
-            >
-              {color.triad.colorTwo.name}
-            </div>
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.triad.colorThree.hex }}
-            >
-              {color.triad.colorThree.name}
-            </div>
-            <div
-              className="w-40 h-40"
-              style={{ backgroundColor: color.triad.colorThree.hex }}
-            >
-              {color.triad.colorFour.name}
-            </div>
-          </div>
-
+      {/* triad color container */}
+      <div className="flex flex-row justify-evenly">
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.triad.colorOne.hex }}
+        >
+          <span className='text-center'>{color.triad.colorOne.name}</span>
+        </div>
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.triad.colorTwo.hex }}
+        >
+          <span className='text-center'>{color.triad.colorTwo.name}</span>
+        </div>
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.triad.colorThree.hex }}
+        >
+          <span className='text-center'>{color.triad.colorThree.name}</span>
+        </div>
+        <div
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+          style={{ backgroundColor: color.triad.colorThree.hex }}
+        >
+          <span className='text-center'>{color.triad.colorFour.name}</span>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default TriadColor

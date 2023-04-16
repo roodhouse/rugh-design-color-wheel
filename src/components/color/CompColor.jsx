@@ -10,36 +10,33 @@ function CompColor() {
 
   return (
     <>
-      <div>
-        <h3>Comp Colors</h3>
-      </div>
       {/* comp color container */}
-      <div className="flex flex-row">
+      <div className="flex flex-row justify-evenly">
         <Link to={`../color/${color.comp.colorOne.link}`}>
           <div
-            className="w-40 h-40"
+            className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.comp.colorOne.hex }}
           >
-            {color.comp.colorOne.name}
+            <span className='text-center'>{color.comp.colorOne.name}</span>
           </div>
         </Link>
         <div
-          className="w-40 h-40"
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
           style={{ backgroundColor: color.comp.colorTwo.hex }}
         >
-          {color.comp.colorTwo.name}
+          <span className='text-center'>{color.comp.colorTwo.name}</span>
         </div>
         <div
-          className="w-40 h-40"
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
           style={{ backgroundColor: color.comp.colorThree.hex }}
         >
-          {color.comp.colorThree.name}
+          <span className='text-center'>{color.comp.colorThree.name}</span>
         </div>
         <div
-          className="w-40 h-40"
+          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
           style={{ backgroundColor: color.comp.colorThree.hex }}
         >
-          {color.comp.colorFour.name}
+          <span className='text-center'>{color.comp.colorFour.name}</span>
         </div>
       </div>
     </>

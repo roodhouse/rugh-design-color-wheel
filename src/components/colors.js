@@ -85,25 +85,25 @@ export const colors = [
 
     ana: {
       colorOne: {
-        name: "Unfussy Beige",
+        name: "Anonymous SW 7046",
         hex: "#806257",
         link: "test",
       },
 
       colorTwo: {
-        name: "Canyon Clay",
+        name: "Lotus Flower SW 6310",
         hex: "#85594f",
         link: "test",
       },
 
       colorThree: {
-        name: "Abalone Shell",
+        name: "Gray Shingle SW 7670",
         hex: "#dbc7bd",
         link: "test",
       },
 
       colorFour: {
-        name: "Reddened Earth",
+        name: "Site White SW 7070",
         hex: "#9c6e63",
         link: "test",
       },

@@ -3,10 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { getColor, getColors } from '../colors';
 import { Link as ScrollLink } from 'react-scroll';
 import {HiArrowNarrowRight} from 'react-icons/hi';
-import CompColor from './CompColor';
-import AnaColor from './AnaColor';
-import TriadColor from './TriadColor';
-import MonoColor from './MonoColor';
+import ColorTabs from './ColorTabs';
+
 
 function Color() { 
     
@@ -31,7 +29,7 @@ function Color() {
                 Color family: {color.family} | LRV: {color.LRV} | <a className='underline decoration-[#E5C1C1] decoration-8 hover:decoration-[#676766]' href='www.rughdesign.com'>Peel+Stick</a>
               </p>
               <div>
-                <ScrollLink to="scheme" smooth={true} duration={500} offset={-250}>
+                <ScrollLink to="scheme" smooth={true} duration={500} offset={-150}>
                   <button className="text-[#676766] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white">
                     Explore
                     <span className="group-hover:rotate-90 duration-300">
@@ -53,21 +51,15 @@ function Color() {
         </div>
       </div>
       {/* container */}
-      <div name='scheme' style={{ backgroundColor: color.hex }} className="w-full h-full">
-        <div className="pt-10 pl-10 pr-10 flex flex-row w-full justify-between">
-          <h1 className="text-4xl pt-10">{color.name}</h1>
-          <div>
-            <h4>Quick Facts</h4>
-            <p>{color.family}</p>
-            <p>{color.comp.colorOne.name}</p>
-          </div>
+      <div name='scheme' style={{ backgroundColor: color.hex }} className="w-full h-screen mx-auto px-8 pb-60">
+        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full'>
+        <div className="py-10">
+          <h2 className="text-4xl">{color.name} color schemes</h2>
         </div>
         {/* scheme container */}
         <div>
-          <CompColor />
-          <AnaColor />
-          <TriadColor />
-          <MonoColor />  
+          <ColorTabs />
+        </div>
         </div>
       </div>
     </div>
