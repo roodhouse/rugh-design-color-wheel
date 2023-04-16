@@ -1,8 +1,6 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TextField } from '@mui/material';
-
-
 import {getColors} from './colors.js';
 import List from './List.jsx';
 

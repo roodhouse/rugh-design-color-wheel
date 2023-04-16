@@ -5,6 +5,7 @@ export const colors = [
     number: "SW 7045",
     family: "blue",
     hex: '#94766c',
+    LRV: 40,
     comp: {
       colorOne: {
         name: "Halycon Green",
