@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import Color from './components/Color';
+import Color from './components/color/Color';
 import Wheel from './components/Wheel';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
