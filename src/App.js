@@ -5,6 +5,7 @@ import Color from './components/Color';
 import Wheel from './components/Wheel';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import List from './components/List';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='color/:id' element={<Color />} />
       </Routes>
       <Footer />
+      <List />
     </div>
   );
 }

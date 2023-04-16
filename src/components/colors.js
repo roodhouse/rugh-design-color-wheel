@@ -1,10 +1,10 @@
-const colors = [
+export const colors = [
   {
     id: "agreeable-gray",
-    name: "Agreeable Gray",
+    name: "agreeable gray",
     number: "SW 7045",
     family: "blue",
-    hex: '#beac9f',
+    hex: '#94766c',
     comp: {
       colorOne: {
         name: "Halycon Green",
@@ -219,9 +219,11 @@ const colors = [
     },
   },
   {
-    id: "3",
-    name: "color 3",
-    family: "white",
+    id: "repose-green",
+    name: "repose green",
+    number: "SW 7045",
+    family: "blue",
+    hex: '#996c6e',
   },
 ];
 

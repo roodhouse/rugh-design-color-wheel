@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getColor, getColors } from './colors';
 
-function Color() {
+function Color() { 
     
     const { id } = useParams();
     const color = getColor(id);
