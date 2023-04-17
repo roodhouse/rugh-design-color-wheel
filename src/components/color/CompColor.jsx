@@ -12,32 +12,70 @@ function CompColor() {
     <>
       {/* comp color container */}
       <div className="flex flex-row justify-evenly">
-        <Link to={`../color/${color.comp.colorOne.link}`}>
+        <Link to={`../color/${color.compOne.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
-            style={{ backgroundColor: color.comp.colorOne.hex }}
+            style={{ backgroundColor: color.compOne.hex }}
           >
-            <span className={color.comp.colorOne.isLight ? 'text-blue-500 text-center' : 'text-red-300 text-center'} style={{ color: color.comp.colorOne.isLight ? 'blue' : 'red'}}>{color.comp.colorOne.name}</span>
+            <span
+              className={
+                color.compOne.light
+                  ? "text-black text-center"
+                  : "text-white text-center"
+              }
+            >
+              {color.compOne.name} {color.compOne.code}
+            </span>
           </div>
         </Link>
-        <div
-          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
-          style={{ backgroundColor: color.comp.colorTwo.hex }}
-        >
-          <span className='text-center'>{color.comp.colorTwo.name}</span>
-        </div>
-        <div
-          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
-          style={{ backgroundColor: color.comp.colorThree.hex }}
-        >
-          <span className='text-center'>{color.comp.colorThree.name}</span>
-        </div>
-        <div
-          className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
-          style={{ backgroundColor: color.comp.colorThree.hex }}
-        >
-          <span className='text-center'>{color.comp.colorFour.name}</span>
-        </div>
+        <Link to={`../color/${color.compTwo.id}`}>
+          <div
+            className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+            style={{ backgroundColor: color.compTwo.hex }}
+          >
+            <span
+              className={
+                color.compTwo.light
+                  ? "text-black text-center"
+                  : "text-white text-center"
+              }
+            >
+              {color.compTwo.name} {color.compTwo.code}
+            </span>
+          </div>
+        </Link>
+        <Link to={`../color/${color.compThree.id}`}>
+          <div
+            className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+            style={{ backgroundColor: color.compThree.hex }}
+          >
+            <span
+              className={
+                color.compThree.light
+                  ? "text-black text-center"
+                  : "text-white text-center"
+              }
+            >
+              {color.compThree.name} {color.compThree.code}
+            </span>
+          </div>
+        </Link>
+        <Link to={`../color/${color.compFour.id}`}>
+          <div
+            className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
+            style={{ backgroundColor: color.compFour.hex }}
+          >
+            <span
+              className={
+                color.compFour.light
+                  ? "text-black text-center"
+                  : "text-white text-center"
+              }
+            >
+              {color.compFour.name} {color.compFour.code}
+            </span>
+          </div>
+        </Link>
       </div>
     </>
   );

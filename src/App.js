@@ -6,10 +6,12 @@ import Wheel from './components/Wheel';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import List from './components/List';
+import { ScrollRestoration } from 'react-router-dom';
 
 function App() {
   return (
     <div>
+      <ScrollRestoration />
       <Navbar />
       <Routes>
         <Route path='/' element={[<Home />, <Wheel />]} />

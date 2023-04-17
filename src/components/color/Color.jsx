@@ -13,7 +13,9 @@ function Color() {
     const colors = getColors();
     const theColor = allColor(id);
 
-    console.log(theColor.comp.colorOne.name)
+    // console.log(theColor)
+    console.log(color.compOne.name)
+    // console.log(theColor.ana.colorFour.name)
 
     
 
@@ -26,15 +28,15 @@ function Color() {
       <div className="flex flex-col h-full">
         <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-[calc(100vh+150px)]">
           <div className="flex flex-col sm:flex-row justify-center">
-            <div className="flex flex-col items-start">
-              <h1 className="text-4xl sm:text-7xl font-bold text-[#E5C1C1] border-b-4 border-[#676766] whitespace-nowrap">
+            <div className="flex flex-col items-start min-w-[53.6%]">
+              <h1 className="text-4xl sm:text-7xl font-bold text-[#E5C1C1] underline decoration-[#676766] decoration-4">
                 {color.name}
               </h1>
               <h2 className="text-4xl sm:text-7xl font-bold text-[#676766]">
-                {color.number}
+                {color.code}
               </h2>
               <p className="text-[#676766] py-4 max-w-[700px]">
-                Color family: {color.family} | LRV: {color.LRV} | <a className='underline decoration-[#E5C1C1] decoration-8 hover:decoration-[#676766]' href='www.rughdesign.com'>Peel+Stick</a>
+                Color family: {color.family} | LRV: {color.lrv} | {color.peel ? <a className='underline decoration-[#E5C1C1] decoration-8 hover:decoration-[#676766]' href={color.peel}>Peel+Stick</a> : console.log('no')}
               </p>
               <div>
                 <ScrollLink to="scheme" smooth={true} duration={500} offset={-150}>
