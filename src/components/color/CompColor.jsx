@@ -17,7 +17,7 @@ function CompColor() {
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.comp.colorOne.hex }}
           >
-            <span className='text-center'>{color.comp.colorOne.name}</span>
+            <span className={color.comp.colorOne.isLight ? 'text-blue-500 text-center' : 'text-red-300 text-center'} style={{ color: color.comp.colorOne.isLight ? 'blue' : 'red'}}>{color.comp.colorOne.name}</span>
           </div>
         </Link>
         <div

@@ -4,13 +4,21 @@ import { getColor, getColors } from '../colors';
 import { Link as ScrollLink } from 'react-scroll';
 import {HiArrowNarrowRight} from 'react-icons/hi';
 import ColorTabs from './ColorTabs';
-
+import { allSchemes, allColor } from './allColors';
 
 function Color() { 
     
     const { id } = useParams();
     const color = getColor(id);
     const colors = getColors();
+    const theColor = allColor(id);
+
+    console.log(theColor.comp.colorOne.name)
+
+    
+
+
+    // console.log(agreeableGrayColors[0].comp.colorOne.name)
 
   return (
     <div className="w-full h-full">

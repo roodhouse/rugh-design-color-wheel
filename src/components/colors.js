@@ -11,6 +11,7 @@ export const colors = [
         name: "Halycon Green",
         hex: "#94766c",
         link: "halycon-green",
+        isLight: false,
       },
 
       colorTwo: {
