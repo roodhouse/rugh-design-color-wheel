@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getColor, getColors } from '../colors';
+import { getColor } from '../colors';
 
 function MonoColor() {
 
     const { id } = useParams();
     const color = getColor(id);
-    const colors = getColors();
+    
 
   return (
     <>
