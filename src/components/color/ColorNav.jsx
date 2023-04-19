@@ -37,10 +37,12 @@ function ColorNav() {
   function thePreviousColor() {
     if (myIndex === 0) {
       let prevColor = myIndex;
-      return prevColor;
+      let notColor = colors[myIndex].name
+      return [prevColor, notColor]
     } else {
       let prevColor = colors[prevIndex].id;
-      return prevColor;
+      let realColor = colors[prevIndex].name;
+      return [prevColor, realColor]
     }
   }
 
@@ -48,10 +50,12 @@ function ColorNav() {
   function theNextColor() {
     if (myIndex === 1730) {
       let nextColor = myIndex;
-      return nextColor;
+      let notColor = colors[myIndex].name
+      return [nextColor, notColor]
     } else {
       let nextColor = colors[nextIndex].id;
-      return nextColor;
+      let realColor = colors[nextIndex].name;
+      return [nextColor, realColor];
     }
   }
 
@@ -61,23 +65,23 @@ function ColorNav() {
         <Link
           onMouseOver={handlePrevMouseOver}
           onMouseOut={handlePrevMouseOut}
-          to={`../color/${thePreviousColor()}`}
+          to={`../color/${thePreviousColor()[0]}`}
         >
           {prevIsHovering && (
             <div
               className={
-                thePreviousColor() === 0
+                thePreviousColor()[0] === 0
                   ? "hidden"
                   : "hover:text-ellipsis hover:whitespace-nowrap hover:overflow-hidden block bg-white text-[#676766] border-2 px-6 py-3 hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white"
               }
             >
-              {colors[prevIndex].name}
+              {thePreviousColor()[1]}
             </div>
           )}
           {!prevIsHovering && (
             <div
               className={
-                thePreviousColor() === 0
+                thePreviousColor()[0] === 0
                   ? "hidden"
                   : "block bg-white text-[#676766] border-2 px-6 py-3 hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white"
               }
@@ -98,23 +102,23 @@ function ColorNav() {
         <Link
           onMouseOver={handleNextMouseOver}
           onMouseOut={handleNextMouseOut}
-          to={`../color/${theNextColor()}`}
+          to={`../color/${theNextColor()[0]}`}
         >
           {nextIsHovering && (
             <div
               className={
-                theNextColor() === 0
+                theNextColor()[0] === 1730
                   ? "hidden"
                   : "hover:text-ellipsis hover:whitespace-nowrap hover:overflow-hidden block bg-white text-[#676766] border-2 px-6 py-3 hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white"
               }
             >
-              {colors[nextIndex].name}
+              {theNextColor()[1]}
             </div>
           )}
           {!nextIsHovering && (
             <div
               className={
-                theNextColor() === 0
+                theNextColor()[0] === 1730
                   ? "hidden"
                   : "block bg-white text-[#676766] border-2 px-6 py-3 hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white"
               }
