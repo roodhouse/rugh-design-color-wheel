@@ -16,7 +16,7 @@ export const mulberrySilk = new sherwinColor('mulberry-silk', 'Mulberry Silk', '
 export const chelseaMauve = new sherwinColor('chelsea-mauve', 'Chelsea Mauve', 'SW 0002', 'Historic Interior', '#beac9f', 43, false, true)
 export const cabbageRose = new sherwinColor('cabbage-rose', 'Cabbage Rose', 'SW 0003', 'Historic Interior', '#c59f91', 39, false, true)
 export const roseBrocade = new sherwinColor('rose-brocade', 'Rose Brocade', 'SW 0004', 'Historic Interior', '#996c6e', 19, false, true)
-export const deepestMauve = new sherwinColor('deepest-mauve', 'Deepest Mauve', 'SW 0005', 'Historic Interior', '#6d595a', 11, false, true)
+export const deepestMauve = new sherwinColor('deepest-mauve', 'Deepest Mauve', 'SW 0005', 'Historic Interior', '#6d595a', 11, false, false)
 export const toileRed = new sherwinColor('toile-red', 'Toile Red', 'SW 0006', 'Historic Interior', '#8b534e', 12, false, true)
 export const decorousAmber = new sherwinColor('decorous-amber', 'Decorous Amber', 'SW 0007', 'Historic Interior', '#ac7559', 22, 'https://www.rughdesign.com/product/decorous-amber-paint-sample', true)
 export const cajunRed = new sherwinColor('cajun-red', 'Cajun Red', 'SW 0008', 'Historic Interior', '#8d422f', 10, false, true)
@@ -46758,5 +46758,5 @@ export const colors = [
   }
   
   export function getColors() {
-    return colors.map(({id, name, family, number}) => ({id, name, family, number}));
+    return colors.map(({id, name, code, family, hex, lrv, peel, light}) => ({id, name, code, family, hex, lrv, peel, light}));
   }

@@ -14,26 +14,18 @@ function Wheel() {
     const colors = getColors();
 
   return (
-    <div name='wheel' className='flex flex-col justify-center max-w-[1000px] mx-auto px-8  h-full pt-[15rem]'>
-        <h1>React Search</h1>
-      <div className="search">
+    <div name='wheel' className='flex flex-col justify-center max-w-[1300px] mx-auto px-8  h-full pt-[15rem] mb-8'>
+        <h1 className='mb-2'>Color scheme search</h1>
+      <div className="search mb-8">
         <TextField
           id="outlined-basic"
           onChange={inputHandler}
           variant="outlined"
           fullWidth
-          label="Search"
+          label="Search by Sherwin-Williams color name"
         />
       </div>
-        <h1>Colors</h1>
       <List input={inputText} />
-        <ul>
-            {colors.map(({id, name, family, number}) => (
-                <li key={id}>
-                    <Link to={`color/${id}`}>{name} is in the {family} family {number}</Link>
-                </li>
-            ))}
-        </ul>
     </div>
   )
 }

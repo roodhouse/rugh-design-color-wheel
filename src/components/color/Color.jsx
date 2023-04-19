@@ -1,26 +1,40 @@
 import * as React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getColor, getColors } from '../colors';
+import { getColor, colors } from '../colors';
 import { Link as ScrollLink } from 'react-scroll';
 import {HiArrowNarrowRight} from 'react-icons/hi';
 import ColorTabs from './ColorTabs';
-import { allSchemes, allColor } from './allColors';
 
-function Color() { 
-    
-    const { id } = useParams();
-    const color = getColor(id);
-    const colors = getColors();
-    const theColor = allColor(id);
+function Color() {
+  const { id } = useParams();
+  const color = getColor(id);
 
-    // console.log(theColor)
-    console.log(color.compOne.name)
-    // console.log(theColor.ana.colorFour.name)
+  // variables for thePreviousColor and theNextColor functions
+  let myIndex = colors.findIndex((colorid) => colorid === color);
+  let nextIndex = myIndex + 1;
+  let prevIndex = myIndex - 1;
 
-    
+  // function to go to the previous color on the color wheel
+  function thePreviousColor() {
+    if (myIndex === 0) {
+      let prevColor = myIndex;
+      return prevColor;
+    } else {
+      let prevColor = colors[prevIndex].id;
+      return prevColor;
+    }
+  }
 
-
-    // console.log(agreeableGrayColors[0].comp.colorOne.name)
+  // function to go to the next color on the color wheel
+  function theNextColor() {
+    if (myIndex === 1730) {
+      let nextColor = myIndex;
+      return nextColor;
+    } else {
+      let nextColor = colors[nextIndex].id;
+      return nextColor;
+    }
+  }
 
   return (
     <div className="w-full h-full">
@@ -36,10 +50,25 @@ function Color() {
                 {color.code}
               </h2>
               <p className="text-[#676766] py-4 max-w-[700px]">
-                Color family: {color.family} | LRV: {color.lrv} | {color.peel ? <a className='underline decoration-[#E5C1C1] decoration-8 hover:decoration-[#676766]' href={color.peel}>Peel+Stick</a> : console.log('no')}
+                Color family: {color.family} | LRV: {color.lrv} |{" "}
+                {color.peel ? (
+                  <a
+                    className="underline decoration-[#E5C1C1] decoration-8 hover:decoration-[#676766]"
+                    href={color.peel}
+                  >
+                    Peel+Stick
+                  </a>
+                ) : (
+                  ""
+                )}
               </p>
               <div>
-                <ScrollLink to="scheme" smooth={true} duration={500} offset={-150}>
+                <ScrollLink
+                  to="scheme"
+                  smooth={true}
+                  duration={500}
+                  offset={-150}
+                >
                   <button className="text-[#676766] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white">
                     Explore
                     <span className="group-hover:rotate-90 duration-300">
@@ -52,24 +81,41 @@ function Color() {
             <div className="ml-[5%] h-[100%] w-[100%] md:h-[75%] order-first sm:order-last pb-4 sm:pb-0">
               <div
                 className="rounded-full md:h-[100%] w-full pt-[100%]"
-                style={{backgroundColor: color.hex}}
+                style={{ backgroundColor: color.hex }}
                 alt="Laura Rugh"
-              >
-                </div>
+              ></div>
             </div>
           </div>
         </div>
       </div>
       {/* container */}
-      <div name='scheme' style={{ backgroundColor: color.hex }} className="w-full h-screen mx-auto px-8 pb-60">
-        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full'>
-        <div className="py-10">
-          <h2 className="text-4xl">{color.name} color schemes</h2>
+      <div
+        name="scheme"
+        style={{ backgroundColor: color.hex }}
+        className="w-full h-screen mx-auto px-8 pb-60"
+      >
+        <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full">
+          <div className="py-10">
+            <h2 className="text-4xl">{color.name} color schemes</h2>
+          </div>
+          {/* scheme container */}
+          <div>
+            <ColorTabs />
+          </div>
         </div>
-        {/* scheme container */}
+        {/* color navigation */}
         <div>
-          <ColorTabs />
-        </div>
+          <div className={thePreviousColor() === 0 ? "hidden" : "block"}>
+            <Link to={`../color/${thePreviousColor()}`}>
+              {thePreviousColor()}
+            </Link>
+          </div>
+          <div>
+            <Link to={`../`}>Back to color wheel</Link>
+          </div>
+          <div className={theNextColor() === 1730 ? "hidden" : "block"}>
+            <Link to={`../color/${theNextColor()}`}>{theNextColor()}</Link>
+          </div>
         </div>
       </div>
     </div>
