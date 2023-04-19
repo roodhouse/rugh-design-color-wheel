@@ -104,7 +104,7 @@ function Color() {
           </div>
         </div>
         {/* color navigation */}
-        <div>
+        <div className='max-w-[1000px] w-full flex flex-row justify-around mx-auto pt-10'>
           <div className={thePreviousColor() === 0 ? "hidden" : "block"}>
             <Link to={`../color/${thePreviousColor()}`}>
               {thePreviousColor()}
