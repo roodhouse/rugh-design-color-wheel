@@ -76,9 +76,9 @@ function Color() {
           <div>
             <ColorTabs />
           </div>
-        </div>
         {/* color navigation */}
         <ColorNav />
+        </div>
       </div>
     </div>
   );
