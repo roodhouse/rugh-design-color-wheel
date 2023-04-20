@@ -5,6 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import {HiArrowNarrowRight} from 'react-icons/hi';
 import ColorTabs from './ColorTabs';
 import ColorNav from './ColorNav';
+import Services from './Services';
 
 function Color() {
   const { id } = useParams();
@@ -80,6 +81,8 @@ function Color() {
         <ColorNav />
         </div>
       </div>
+      {/* service section */}
+      <Services />
     </div>
   );
 }
