@@ -80,7 +80,6 @@ function Color() {
         {/* color navigation */}
         <ColorNav />
         </div>
-        <p>hire me</p>
       </div>
       {/* service section */}
       <Services />
