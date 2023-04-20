@@ -13,7 +13,7 @@ function Wheel() {
     }
     
   return (
-    <div name='wheel' className='flex flex-col justify-center max-w-[1300px] mx-auto px-8  h-full pt-[15rem] mb-8'>
+    <div name='wheel' className='flex flex-col justify-center max-w-[1300px] mx-auto px-8  h-full pt-[20rem] mb-8'>
         <h1 className='mb-2'>Color scheme search</h1>
       <div className="search mb-8">
         <TextField
