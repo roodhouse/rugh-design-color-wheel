@@ -10,12 +10,12 @@ function Home() {
     const colors = getColors();
 
   return (
-    <div name="home" className="w-full h-full pt-60">
+    <div name="home" className="w-full h-full pt-44 sm:pt-60">
       {/* container */}
       <div className="flex flex-col h-full">
         <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
           <div className="flex flex-col sm:flex-row justify-center">
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
               <h1 className="text-4xl sm:text-7xl font-bold text-[#E5C1C1] border-b-4 border-[#676766] whitespace-nowrap">
                 Color Wheel
               </h1>
@@ -36,7 +36,7 @@ function Home() {
                 </ScrollLink>
               </div>
             </div>
-            <div className="ml-[5%] h-[100%] w-[100%] md:h-[75%] order-first sm:order-last pb-4 sm:pb-0">
+            <div className="flex flex-row justify-center sm:justify-normal sm:ml-[5%] h-[100%] w-[100%] md:h-[75%] order-first sm:order-last pb-4 sm:pb-0">
               <img
                 className="rounded-full md:h-[100%]"
                 src={Laura}

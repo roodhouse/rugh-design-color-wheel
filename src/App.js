@@ -18,7 +18,6 @@ function App() {
         <Route path='color/:id' element={<Color />} />
       </Routes>
       <Footer />
-      <List />
     </div>
   );
 }
