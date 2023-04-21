@@ -20,9 +20,9 @@ function List(props) {
     return (
         <div className='colors-container flex flex-row flex-wrap justify-center'>
             {filteredData.map((item) => (
-               <Link className='m-2' to={`../color/${item.id}`}>
+               <Link className='m-2' to={`../color/${item.id}`} alt={`${item.name} ${item.code}`}>
                     <div key={item.id} className='w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end' style={{backgroundColor: item.hex}}>
-                        <span className={item.light ? 'text-black text-center' : 'text-white text-center'}>{item.name} {item.code}</span>
+                        <span className={item.light ? 'text-black text-center px-px' : 'text-white text-center px-px'}>{item.name}</span>
                     </div>
                 </Link>
             ))}
