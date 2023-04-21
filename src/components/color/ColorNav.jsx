@@ -60,7 +60,7 @@ function ColorNav() {
   }
 
   return (
-    <div className="max-w-[1000px] w-full flex flex-row justify-around mx-auto pt-10">
+    <div className="max-w-[1000px] w-full flex flex-col md:flex-row justify-around mx-auto pt-10">
       <div className="w-[200px] text-center whitespace-nowrap">
         <Link
           onMouseOver={handlePrevMouseOver}

@@ -1,4 +1,9 @@
-import { React, useState } from 'react';
+import * as React from 'react';
+import { useState } from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CompColor from './CompColor';
 import AnaColor from './AnaColor';
 import TriadColor from './TriadColor';
@@ -18,7 +23,57 @@ function ColorTabs() {
 
   return (
     <>
-      <Box className='w-full'>
+      {/* accordion for small screens */}
+      <Accordion sx={{backgroundColor: 'transparent'}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="analogous-content"
+          id="analogous-header"
+        >
+          <h5>Analogous</h5>
+        </AccordionSummary>
+        <AccordionDetails>
+          <AnaColor />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion sx={{backgroundColor: 'transparent'}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="monochromatic-content"
+          id="monochromatic-header"
+        >
+          <h5 className='max-[350px]:text-sm'>Monochromatic</h5>
+        </AccordionSummary>
+        <AccordionDetails>
+          <MonoColor />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion sx={{backgroundColor: 'transparent'}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="triad-content"
+          id="triad-header"
+        >
+          <h5>Triad</h5>
+        </AccordionSummary>
+        <AccordionDetails>
+          <TriadColor />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion sx={{backgroundColor: 'transparent'}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="comp-content"
+          id="comp-header"
+        >
+          <h5 className='max-[350px]:text-sm'>Complementary</h5>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CompColor />
+        </AccordionDetails>
+      </Accordion>
+      {/* horizontal tab */}
+      <Box className='w-full hidden'>
         <Tabs
           value={value}
           onChange={handleChange}
