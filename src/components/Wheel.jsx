@@ -21,7 +21,7 @@ function Wheel() {
           onChange={inputHandler}
           variant="outlined"
           fullWidth
-          label="Search by Sherwin-Williams color name"
+          label="Search by color name, color family, color number"
         />
       </div>
       <List input={inputText} />

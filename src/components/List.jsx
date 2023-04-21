@@ -13,7 +13,7 @@ function List(props) {
         }
         //return the item which contains the user input
         else {
-            return el.name.toLowerCase().includes(props.input)
+            return el.name.toLowerCase().includes(props.input) || el.family.toLowerCase().includes(props.input) || el.code.toLowerCase().includes(props.input)
         }
     })
 
