@@ -69,7 +69,7 @@ function Color() {
         style={{ backgroundColor: color.hex }}
         className="w-full h-full mx-auto px-8 pb-60 pt-60"
       >
-        <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full sm:h-screen">
+        <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full mt-48">
           <div className="py-10">
             <h2 className="text-5xl text-center sm:text-left">{color.name}</h2>
             <p className='text-center sm:text-left'>color schemes</p>

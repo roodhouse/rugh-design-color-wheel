@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Logo from '../assets/RD.svg'
+import Logo from '../assets/RD.svg';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { Link as NewLink } from "react-router-dom"
 import { Link, animateScroll as scroll } from 'react-scroll'
@@ -12,7 +12,7 @@ function Navbar() {
     <div className='fixed w-full h-[150px] flex justify-between items-center px-4 bg-white z-10'>
         {/* logo */}
         <div>
-            <img className='pt-14' src={Logo} alt="Rugh Design" />
+            <img src={Logo} alt="Rugh Design" />
         </div>
 
         {/* menu */}
