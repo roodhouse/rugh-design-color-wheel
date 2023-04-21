@@ -17,14 +17,14 @@ function Color() {
       <div className="flex flex-col h-full">
         <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-[calc(100vh+150px)]">
           <div className="flex flex-col sm:flex-row justify-center">
-            <div className="flex flex-col items-start min-w-[53.6%]">
-              <h1 className="text-4xl sm:text-7xl font-bold text-[#E5C1C1] underline decoration-[#676766] decoration-4">
+            <div className="flex flex-col items-center sm:items-start min-w-[53.6%]">
+              <h1 className="text-5xl sm:text-7xl  text-center sm:text-left font-bold text-[#E5C1C1] underline decoration-[#676766] decoration-4">
                 {color.name}
               </h1>
               <h2 className="text-4xl sm:text-7xl font-bold text-[#676766]">
                 {color.code}
               </h2>
-              <p className="text-[#676766] py-4 max-w-[700px]">
+              <p className="text-[#676766] text-center py-4 max-w-[700px]">
                 Color family: {color.family} | LRV: {color.lrv} |{" "}
                 {color.peel ? (
                   <a
@@ -53,7 +53,7 @@ function Color() {
                 </ScrollLink>
               </div>
             </div>
-            <div className="ml-[5%] h-[100%] w-[100%] md:h-[75%] order-first sm:order-last pb-4 sm:pb-0">
+            <div className="sm:ml-[5%] h-[100%] w-[100%] md:h-[75%] order-first sm:order-last pb-4 sm:pb-0">
               <div
                 className="rounded-full md:h-[100%] w-full pt-[100%]"
                 style={{ backgroundColor: color.hex }}
@@ -67,11 +67,12 @@ function Color() {
       <div
         name="scheme"
         style={{ backgroundColor: color.hex }}
-        className="w-full h-screen mx-auto px-8 pb-60"
+        className="w-full h-full sm:h-screen mx-auto px-8 pb-60"
       >
         <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full">
           <div className="py-10">
-            <h2 className="text-4xl">{color.name} color schemes</h2>
+            <h2 className="text-5xl text-center sm:text-left">{color.name}</h2>
+            <p className='text-center sm:text-left'>color schemes</p>
           </div>
           {/* scheme container */}
           <div>

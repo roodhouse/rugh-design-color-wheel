@@ -11,7 +11,7 @@ function AnaColor() {
   return (
     <>
       {/* ana color container */}
-      <div className="flex flex-row justify-evenly">
+      <div className="flex flex-row flex-wrap gap-3 sm:gap-0 justify-evenly">
         <Link to={`../color/${color.anaOne.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
