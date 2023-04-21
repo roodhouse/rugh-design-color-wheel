@@ -15,17 +15,23 @@ import './styles.css'
 
 function ColorTabs() {
 
+  // state for tabs
   const [value, setValue] = useState('ana');
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  // state for accordions
+  const [expanded, setExpanded] = useState(false);
+  const handleExpand = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false)
+  }
 
   return (
     <>
       {/* accordion for small screens */}
       <div className='block lg:hidden'>
-      <Accordion sx={{backgroundColor: 'transparent'}}>
+      <Accordion expanded={expanded === 'ana'} onChange={handleExpand('ana')} sx={{backgroundColor: 'transparent'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="analogous-content"
@@ -37,7 +43,7 @@ function ColorTabs() {
           <AnaColor />
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={{backgroundColor: 'transparent'}}>
+      <Accordion expanded={expanded === 'mono'} onChange={handleExpand('mono')} sx={{backgroundColor: 'transparent'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="monochromatic-content"
@@ -49,7 +55,7 @@ function ColorTabs() {
           <MonoColor />
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={{backgroundColor: 'transparent'}}>
+      <Accordion expanded={expanded === 'triad'} onChange={handleExpand('triad')} sx={{backgroundColor: 'transparent'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="triad-content"
@@ -61,7 +67,7 @@ function ColorTabs() {
           <TriadColor />
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={{backgroundColor: 'transparent'}}>
+      <Accordion expanded={expanded === 'comp'} onChange={handleExpand('comp')} sx={{backgroundColor: 'transparent'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="comp-content"
