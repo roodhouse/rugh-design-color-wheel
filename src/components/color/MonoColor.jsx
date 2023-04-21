@@ -12,7 +12,7 @@ function MonoColor() {
     <>
       {/* mono color container */}
       <div className="flex flex-row flex-wrap gap-3 sm:gap-0 sm:gap-y-3 justify-evenly">
-        <Link to={`../color/${color.monoOne.id}`}>
+        <Link to={`../color-wheel/${color.monoOne.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.monoOne.hex }}
@@ -28,7 +28,7 @@ function MonoColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.monoTwo.id}`}>
+        <Link to={`../color-wheel/${color.monoTwo.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.monoTwo.hex }}
@@ -44,7 +44,7 @@ function MonoColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.monoThree.id}`}>
+        <Link to={`../color-wheel/${color.monoThree.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.monoThree.hex }}
@@ -60,7 +60,7 @@ function MonoColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.monoFour.id}`}>
+        <Link to={`../color-wheel/${color.monoFour.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.monoFour.hex }}

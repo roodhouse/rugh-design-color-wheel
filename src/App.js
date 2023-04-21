@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={[<Home />, <Wheel />]} />
-        <Route path='color/:id' element={<Color />} />
+        <Route path='color-wheel/:id' element={<Color />} />
       </Routes>
       <Footer />
     </div>

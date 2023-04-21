@@ -12,7 +12,7 @@ function TriadColor() {
     <>
       {/* triad color container */}
       <div className="flex flex-row flex-wrap gap-3 sm:gap-0 sm:gap-y-3 justify-evenly">
-        <Link to={`../color/${color.triadOne.id}`}>
+        <Link to={`../color-wheel/${color.triadOne.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.triadOne.hex }}
@@ -28,7 +28,7 @@ function TriadColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.triadTwo.id}`}>
+        <Link to={`../color-wheel/${color.triadTwo.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.triadTwo.hex }}
@@ -44,7 +44,7 @@ function TriadColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.triadThree.id}`}>
+        <Link to={`../color-wheel/${color.triadThree.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.triadThree.hex }}
@@ -60,7 +60,7 @@ function TriadColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.triadFour.id}`}>
+        <Link to={`../color-wheel/${color.triadFour.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.triadFour.hex }}

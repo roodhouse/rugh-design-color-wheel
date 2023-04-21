@@ -12,7 +12,7 @@ function CompColor() {
     <>
       {/* comp color container */}
       <div className="flex flex-row flex-wrap gap-3 sm:gap-0 sm:gap-y-3 justify-evenly">
-        <Link to={`../color/${color.compOne.id}`}>
+        <Link to={`../color-wheel/${color.compOne.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.compOne.hex }}
@@ -28,7 +28,7 @@ function CompColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.compTwo.id}`}>
+        <Link to={`../color-wheel/${color.compTwo.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.compTwo.hex }}
@@ -44,7 +44,7 @@ function CompColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.compThree.id}`}>
+        <Link to={`../color-wheel/${color.compThree.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.compThree.hex }}
@@ -60,7 +60,7 @@ function CompColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.compFour.id}`}>
+        <Link to={`../color-wheel/${color.compFour.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.compFour.hex }}
