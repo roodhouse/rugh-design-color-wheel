@@ -14,9 +14,8 @@ function Color() {
   return (
     <div className="w-full h-full">
       {/* container */}
-      <div className="flex flex-col h-full">
-        {/* adjust padding top here */}
-        <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-[calc(100vh+150px)]">
+      <div className="flex flex-col mb-40">
+        <div className="max-w-[1000px] sm:pt-40 mt-60 mb-40 sm:mt-40 mx-auto px-8 flex flex-col justify-center w-full ">
           <div className="flex flex-col sm:flex-row justify-center">
             <div className="flex flex-col items-center sm:items-start min-w-[53.6%]">
               <h1 className="text-5xl sm:text-7xl  text-center sm:text-left font-bold text-[#E5C1C1] underline decoration-[#676766] decoration-4">
@@ -43,7 +42,7 @@ function Color() {
                   to="scheme"
                   smooth={true}
                   duration={500}
-                  offset={-150}
+                  offset={150}
                 >
                   <button className="text-[#676766] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white">
                     Explore
@@ -54,9 +53,9 @@ function Color() {
                 </ScrollLink>
               </div>
             </div>
-            <div className="sm:ml-[5%] h-[100%] w-[100%] md:h-[75%] order-first sm:order-last pb-4 sm:pb-0">
+            <div className="flex flex-row justify-center sm:block sm:ml-[5%] h-[100%] w-[100%] md:h-[75%] order-first sm:order-last pb-4 sm:pb-0">
               <div
-                className="rounded-full md:h-[100%] w-full pt-[100%]"
+                className="rounded-full md:h-[100%] w-[50%] sm:w-full pt-[50%] sm:pt-[100%]"
                 style={{ backgroundColor: color.hex }}
                 alt="Laura Rugh"
               ></div>
@@ -68,9 +67,9 @@ function Color() {
       <div
         name="scheme"
         style={{ backgroundColor: color.hex }}
-        className="w-full h-full sm:h-screen mx-auto px-8 pb-60"
+        className="w-full h-full mx-auto px-8 pb-60 pt-60"
       >
-        <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full">
+        <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-full sm:h-screen">
           <div className="py-10">
             <h2 className="text-5xl text-center sm:text-left">{color.name}</h2>
             <p className='text-center sm:text-left'>color schemes</p>
