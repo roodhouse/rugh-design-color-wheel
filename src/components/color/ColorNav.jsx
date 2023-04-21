@@ -65,7 +65,7 @@ function ColorNav() {
         <Link
           onMouseOver={handlePrevMouseOver}
           onMouseOut={handlePrevMouseOut}
-          to={`../color/${thePreviousColor()[0]}`}
+          to={`../color-wheel/${thePreviousColor()[0]}`}
         >
           {prevIsHovering && (
             <div
@@ -102,7 +102,7 @@ function ColorNav() {
         <Link
           onMouseOver={handleNextMouseOver}
           onMouseOut={handleNextMouseOut}
-          to={`../color/${theNextColor()[0]}`}
+          to={`../color-wheel/${theNextColor()[0]}`}
         >
           {nextIsHovering && (
             <div

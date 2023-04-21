@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '*color',
+        path: '*color-wheel',
         element: <Color />,
       },
     ],

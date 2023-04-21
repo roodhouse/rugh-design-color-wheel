@@ -12,7 +12,7 @@ function AnaColor() {
     <>
       {/* ana color container */}
       <div className="flex flex-row flex-wrap gap-3 sm:gap-0 sm:gap-y-3 justify-evenly">
-        <Link to={`../color/${color.anaOne.id}`}>
+        <Link to={`../color-wheel/${color.anaOne.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.anaOne.hex }}
@@ -28,7 +28,7 @@ function AnaColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.anaTwo.id}`}>
+        <Link to={`../color-wheel/${color.anaTwo.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.anaTwo.hex }}
@@ -44,7 +44,7 @@ function AnaColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.anaThree.id}`}>
+        <Link to={`../color-wheel/${color.anaThree.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.anaThree.hex }}
@@ -60,7 +60,7 @@ function AnaColor() {
             </span>
           </div>
         </Link>
-        <Link to={`../color/${color.anaFour.id}`}>
+        <Link to={`../color-wheel/${color.anaFour.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
             style={{ backgroundColor: color.anaFour.hex }}
