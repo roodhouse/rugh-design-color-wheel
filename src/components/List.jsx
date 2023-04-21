@@ -1,6 +1,8 @@
 import { React } from 'react'
 import { colors as data } from "./colors";
 import { Link } from 'react-router-dom';
+import Tooltip from '@mui/material/Tooltip';
+import Fade from '@mui/material/Fade';
 
 
 function List(props) {
@@ -21,9 +23,14 @@ function List(props) {
         <div className='colors-container flex flex-row flex-wrap justify-center'>
             {filteredData.map((item) => (
                <Link className='m-2' to={`../color/${item.id}`} alt={`${item.name} ${item.code}`}>
+                <Tooltip 
+                    title={`${item.name} ${item.code} | ${item.family} color family`} 
+                    enterDelay={1500}
+                    >
                     <div key={item.id} className='w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end' style={{backgroundColor: item.hex}}>
                         <span className={item.light ? 'text-black text-center px-px' : 'text-white text-center px-px'}>{item.name}</span>
                     </div>
+                </Tooltip>
                 </Link>
             ))}
         </div>
