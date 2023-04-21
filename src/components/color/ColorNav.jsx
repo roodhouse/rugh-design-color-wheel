@@ -92,7 +92,7 @@ function ColorNav() {
         </Link>
       </div>
       <div className="w-full md:w-[200px] text-center">
-        <Link to={`../`}>
+        <Link to={`../color-wheel`}>
           <div className="block bg-white text-[#676766] border-2 px-6 py-3 hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white">
             Back to color wheel
           </div>
