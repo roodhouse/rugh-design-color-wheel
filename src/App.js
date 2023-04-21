@@ -14,7 +14,7 @@ function App() {
       <ScrollRestoration />
       <Navbar />
       <Routes>
-        <Route path='/' element={[<Home />, <Wheel />]} />
+        <Route path='/color-wheel' element={[<Home />, <Wheel />]} />
         <Route path='color-wheel/:id' element={<Color />} />
       </Routes>
       <Footer />

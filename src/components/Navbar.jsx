@@ -121,7 +121,7 @@ function Navbar() {
                 "&:hover": { backgroundColor: "rgba(229, 193, 193, 0.19)" },
               }}
             >
-              <NewLink to="/">Color Schemes</NewLink>
+              <NewLink to="/color-wheel">Color Wheel</NewLink>
             </MenuItem>
             <MenuItem
               onClick={handleClose}
@@ -206,7 +206,7 @@ function Navbar() {
           </NewLink>
         </li>
         <li className="py-6 text-4xl">
-          <NewLink to="/">Color Schemes</NewLink>
+          <NewLink to="/color-wheel">Color Wheel</NewLink>
         </li>
         <li className="py-6 text-4xl">
           <NewLink to="https://www.rughdesign.com/review/">
@@ -244,7 +244,7 @@ function Navbar() {
           </NewLink>
         </li>
         <li className="py-1.5 text-2xl">
-          <NewLink to="/">Color Schemes</NewLink>
+          <NewLink to="/color-wheel">Color Wheel</NewLink>
         </li>
         <li className="py-1.5 text-2xl">
           <NewLink to="https://www.rughdesign.com/review/">
