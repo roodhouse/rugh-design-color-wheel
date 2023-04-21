@@ -11,7 +11,12 @@ import './styles.css';
 function Interior() {
   return (
     // interior services
-    <Card sx={{ maxWidth: '35%' }}>
+    <Card sx={{ 
+      maxWidth: { xs: '100%',
+                  sm: '55%',
+                  md: '35%'
+                  }  
+                }}>
       <CardMedia
         component="img"
         alt="Interior Color Consultation"

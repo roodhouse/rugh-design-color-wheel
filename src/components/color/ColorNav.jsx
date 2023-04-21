@@ -61,7 +61,7 @@ function ColorNav() {
 
   return (
     <div className="max-w-[1000px] w-full flex flex-col md:flex-row justify-around mx-auto pt-10">
-      <div className="w-[200px] text-center whitespace-nowrap">
+      <div className="w-full md:w-[200px] text-center whitespace-nowrap">
         <Link
           onMouseOver={handlePrevMouseOver}
           onMouseOut={handlePrevMouseOut}
@@ -91,14 +91,14 @@ function ColorNav() {
           )}
         </Link>
       </div>
-      <div className="w-[200px] text-center">
+      <div className="w-full md:w-[200px] text-center">
         <Link to={`../`}>
           <div className="block bg-white text-[#676766] border-2 px-6 py-3 hover:bg-[#E5C1C1] hover:border-[#E5C1C1] hover:text-white">
             Back to color wheel
           </div>
         </Link>
       </div>
-      <div className="w-[200px] text-center whitespace-nowrap">
+      <div className="w-full md:w-[200px] text-center whitespace-nowrap">
         <Link
           onMouseOver={handleNextMouseOver}
           onMouseOut={handleNextMouseOut}

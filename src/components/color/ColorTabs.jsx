@@ -24,6 +24,7 @@ function ColorTabs() {
   return (
     <>
       {/* accordion for small screens */}
+      <div className='block lg:hidden'>
       <Accordion sx={{backgroundColor: 'transparent'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -72,8 +73,9 @@ function ColorTabs() {
           <CompColor />
         </AccordionDetails>
       </Accordion>
+      </div>
       {/* horizontal tab */}
-      <Box className='w-full hidden'>
+      <Box className='w-full hidden lg:block'>
         <Tabs
           value={value}
           onChange={handleChange}

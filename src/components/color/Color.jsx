@@ -15,6 +15,7 @@ function Color() {
     <div className="w-full h-full">
       {/* container */}
       <div className="flex flex-col h-full">
+        {/* adjust padding top here */}
         <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center w-full h-[calc(100vh+150px)]">
           <div className="flex flex-col sm:flex-row justify-center">
             <div className="flex flex-col items-center sm:items-start min-w-[53.6%]">

@@ -7,7 +7,7 @@ function Services() {
   return (
     <>
       <div name="services" className="w-full h-full">
-        <div className="max-w-[1300px] mx-auto px-4 pt-60 sm:pt-0 flex flex-col sm:flex-row justify-center w-full h-full">
+        <div className="max-w-[1300px] mx-auto px-4 pt-0 flex flex-col sm:flex-row justify-center w-full h-full">
           <div className="max-w-[100%] text-center sm:text-right flex flex-col items-center sm:items-end">
             <h3 className="text-4xl text-[#676766] font-bold inline border-b-4 border-[#E5C1C1] pt-10">
               Hire me

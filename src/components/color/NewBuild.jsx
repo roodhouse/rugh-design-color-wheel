@@ -10,8 +10,13 @@ import './styles.css';
 
 function NewBuild() {
   return (
-    // interior services
-    <Card sx={{ maxWidth: '35%' }}>
+    // eDesign services
+    <Card sx={{ 
+      maxWidth: { xs: '100%',
+                  sm: '55%',
+                  md: '35%'
+                  }  
+                }}>
       <CardMedia
         component="img"
         alt="New build eDesign"
