@@ -20,8 +20,8 @@ function TriadColor() {
             <span
               className={
                 color.triadOne.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.triadOne.name} {color.triadOne.code}
@@ -36,8 +36,8 @@ function TriadColor() {
             <span
               className={
                 color.triadTwo.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.triadTwo.name} {color.triadTwo.code}
@@ -52,8 +52,8 @@ function TriadColor() {
             <span
               className={
                 color.triadThree.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.triadThree.name} {color.triadThree.code}
@@ -68,8 +68,8 @@ function TriadColor() {
             <span
               className={
                 color.triadFour.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.triadFour.name} {color.triadFour.code}

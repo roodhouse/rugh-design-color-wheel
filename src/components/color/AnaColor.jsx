@@ -20,8 +20,8 @@ function AnaColor() {
             <span
               className={
                 color.anaOne.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.anaOne.name} {color.anaOne.code}
@@ -36,8 +36,8 @@ function AnaColor() {
             <span
               className={
                 color.anaTwo.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.anaTwo.name} {color.anaTwo.code}
@@ -52,8 +52,8 @@ function AnaColor() {
             <span
               className={
                 color.anaThree.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.anaThree.name} {color.anaThree.code}
@@ -68,8 +68,8 @@ function AnaColor() {
             <span
               className={
                 color.anaFour.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.anaFour.name} {color.anaThree.code}

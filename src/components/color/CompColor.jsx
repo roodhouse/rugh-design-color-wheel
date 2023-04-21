@@ -20,8 +20,8 @@ function CompColor() {
             <span
               className={
                 color.compOne.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.compOne.name} {color.compOne.code}
@@ -36,8 +36,8 @@ function CompColor() {
             <span
               className={
                 color.compTwo.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.compTwo.name} {color.compTwo.code}
@@ -52,8 +52,8 @@ function CompColor() {
             <span
               className={
                 color.compThree.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.compThree.name} {color.compThree.code}
@@ -68,8 +68,8 @@ function CompColor() {
             <span
               className={
                 color.compFour.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.compFour.name} {color.compFour.code}

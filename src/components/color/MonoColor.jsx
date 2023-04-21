@@ -20,8 +20,8 @@ function MonoColor() {
             <span
               className={
                 color.monoOne.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.monoOne.name} {color.monoOne.code}
@@ -36,8 +36,8 @@ function MonoColor() {
             <span
               className={
                 color.monoTwo.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.monoTwo.name} {color.monoTwo.code}
@@ -52,8 +52,8 @@ function MonoColor() {
             <span
               className={
                 color.monoThree.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.monoThree.name} {color.monoThree.code}
@@ -68,8 +68,8 @@ function MonoColor() {
             <span
               className={
                 color.monoFour.light
-                  ? "text-black text-center"
-                  : "text-white text-center"
+                  ? "text-black text-center px-px"
+                  : "text-white text-center px-px"
               }
             >
               {color.monoFour.name} {color.monoFour.code}
