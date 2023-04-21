@@ -11,7 +11,7 @@ function CompColor() {
   return (
     <>
       {/* comp color container */}
-      <div className="flex flex-row flex-wrap gap-3 sm:gap-0 justify-evenly">
+      <div className="flex flex-row flex-wrap gap-3 sm:gap-0 sm:gap-y-3 justify-evenly">
         <Link to={`../color/${color.compOne.id}`}>
           <div
             className="w-44 h-44 border-2 border-black border-solid flex flex-row justify-center items-end"
