@@ -90,7 +90,7 @@ function Navbar() {
         </div>
 
         {/* mobile menu */}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-[#676766] text-white'}>
+        <ul className={!nav ? 'hidden' : 'landscape:hidden absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-[#676766] text-white'}>
             <li className='py-6 text-4xl'><Link onClick={handleClick} to="home" smooth={true} duration={500}><NewLink to='/'>Home</NewLink></Link></li>
             <li className='py-6 text-4xl'><Link onClick={handleClick} to="consult" smooth={true} duration={500}><NewLink to='/'>Color Consultation</NewLink></Link></li>
             <li className='py-6 text-4xl'><Link onClick={handleClick} to="samples" smooth={true} duration={500} ><NewLink to='/'>Color Samples</NewLink></Link></li>
@@ -98,6 +98,16 @@ function Navbar() {
             <li className='py-6 text-4xl'><Link onClick={handleClick} to="review" smooth={true} duration={500} ><NewLink to='/'>Color Review</NewLink></Link></li>
             <li className='py-6 text-4xl'><Link onClick={handleClick} to="edesign" smooth={true} duration={500}><NewLink to='/'>eDesign</NewLink></Link></li>
             <li className='py-6 text-4xl'><Link onClick={handleClick} to="work" smooth={true} duration={500} ><NewLink to='/'>Portfolio</NewLink></Link></li>
+        </ul>
+        {/* landscape only menu */}
+        <ul className={!nav ? 'hidden' : 'portrait:hidden absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-[#676766] text-white'}>
+            <li className='py-1.5 text-2xl'><Link onClick={handleClick} to="home" smooth={true} duration={500}><NewLink to='/'>Home</NewLink></Link></li>
+            <li className='py-1.5 text-2xl'><Link onClick={handleClick} to="consult" smooth={true} duration={500}><NewLink to='/'>Color Consultation</NewLink></Link></li>
+            <li className='py-1.5 text-2xl'><Link onClick={handleClick} to="samples" smooth={true} duration={500} ><NewLink to='/'>Color Samples</NewLink></Link></li>
+            <li className='py-1.5 text-2xl'><Link onClick={handleClick} to="scheme" smooth={true} duration={500} ><NewLink to='/'>Color Schemes</NewLink></Link></li>
+            <li className='py-1.5 text-2xl'><Link onClick={handleClick} to="review" smooth={true} duration={500} ><NewLink to='/'>Color Review</NewLink></Link></li>
+            <li className='py-1.5 text-2xl'><Link onClick={handleClick} to="edesign" smooth={true} duration={500}><NewLink to='/'>eDesign</NewLink></Link></li>
+            <li className='py-1.5 text-2xl'><Link onClick={handleClick} to="work" smooth={true} duration={500} ><NewLink to='/'>Portfolio</NewLink></Link></li>
         </ul>
     </div>
   )
